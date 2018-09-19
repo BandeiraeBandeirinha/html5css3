@@ -2,7 +2,15 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/lolzin.png">
 	<title>Home - HTML5 CSS3</title>
+
+	<style type="text/css">
+img{
+	border-radius: 20px; /* Arredondar os cantos */
+}
+</style>
 	<!-- SEO Importante -->
 	<meta name = description content = "Aprenda HTML5 e CSS3 de forma simples e prática">
 	<!-- A linha abaixo "garante" o layout responsivo nos diversos
@@ -10,8 +18,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<h1 style="text-align:center">Aprenda HTM5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo</h1>
+	<!-- estrutura principal -->
+	<div id ="main">
+		<!-- Cabeçalho -->
+		<header style="text-align:center">
+			<img src="imagens/SASAGEYO.gif" alt="html5 css3">
+		</header>
+		<!-- Menu -->
+		<nav>
+			<ul>
+				<!-- ul>li*4>a -->
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Conteúdo</a></li>
+					<li><a href="#">html</a></li>
+					<li><a href="#">css</a></li>
+					<li><a href="#">javascript</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+		<!-- conteúdo -->
+		<section id="banner" style="text-align:center">
+			<img src="imagens/mac.jpg" alt="html5 css3">
+		</section>
 
-	<p style="text-align:center"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque asperiores provident soluta placeat quia ratione quod necessitatibus, officia sunt. Numquam quia iste ea iusto dolore veritatis. Assumenda, at quos nihil.</span><br><span>Fugit, cum ipsam harum possimus. Numquam itaque non aliquid at sunt aliquam, quis, exercitationem blanditiis dicta labore nobis ipsum voluptatem tenetur suscipit enim asperiores, nulla officia. Nemo placeat dolorum sunt!</span></p>
+		<section id="headling">
+			<h1 style="text-align:center">Aprenda HTM5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo do "Zero" (dale dedele dedele dale dedele doli)</h1>
+		</section>
+
+		<section id="destaque" style="text-align:center">
+			<!-- Bloco 1 -->
+
+			<img src="imagens/exploracao.png" alt="mobile">
+			<p>SASAGEYO SASSAGEYO SHINZOU WO SASAGEYO</p>
+			<a href="#">Botão 1</a><br>
+
+			<img src="imagens/cavalaria.png" alt="responsivo">
+			<p>SASAGEYO SASSAGEYO SHINZOU WO SASAGEYO</p>
+			<a href="#">Botão 2</a><br>
+
+			<img src="imagens/rose.png" alt="frontend">
+			<p>SASAGEYO SASSAGEYO SHINZOU WO SASAGEYO</p>
+			<a href="#">Botão 3</a><br>
+		</section>
+
+		<!-- Rodapé -->
+		<footer>
+			<p style="text-align:center">©2018 - dale dedele dedele dedale dedele dedele dedoli</p>
+		</footer>
+
+	</div>
 </body>
 </html>
