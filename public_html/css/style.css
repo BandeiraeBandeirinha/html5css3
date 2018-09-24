@@ -1,0 +1,43 @@
+/* Folha de estilo principal */
+
+/*********************** Importando Fonte ***********************/
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+/*********************** Principal ***********************/
+body{
+	font-family: 'Shadows Into Light', cursive;
+	/*background: #6e6e6e;*/
+	background-image: url("../imagens/51.jpg");
+	background-attachment: fixed;/* fixa o background */
+	background-size: cover;/* manter o tamanho da imagem de forma responsiva*/ 
+	font-size: 1em; /* 1em = 16px */
+}
+#main{
+	max-width: 1024px;
+	/*background-color: #ffffff;*/
+	margin: 0 auto; /* centralizar */
+}
+/*********************** Tratamento Responsivo ***********************/
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
+#banner img{
+width: 1020px;
+height: 500px;
+}
+
+h1{
+ color: #ffffff;
+}
+
+h2{
+ color: #ffffff;
+}
+
+p{
+	 color: #ffffff;
+}
+
+ul{
+	 color: #ffffff;
+}
