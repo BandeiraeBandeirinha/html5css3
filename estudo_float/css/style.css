@@ -1,0 +1,30 @@
+/**
+Estudo do float
+* @autor Geovani Matheus Bandeira
+* Data 26/092018
+**/
+
+/*
+float: rigth; (flutua a direita do elemento anterior)
+float: left; (flutua a esquerda do elemento anterior)
+
+*/
+
+#vermelho{
+	width: 250px;
+	height: 250px;
+	background: black;
+
+}
+#verde{
+	width: 250px;
+	height: 250px;
+	background-color: red;
+
+}
+#azul{
+	width: 250px;
+	height: 250px;
+	background-color: yellow;
+
+}

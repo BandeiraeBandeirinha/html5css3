@@ -16,7 +16,23 @@ body{
 	max-width: 1024px;
 	/*background-color: #ffffff;*/
 	margin: 0 auto; /* centralizar */
+	margin-top: 50px;
 }
+
+/** Cabeçalho **/
+/* header{
+	width: 100%	;
+	height: 200px;
+	background-color: #000000;
+
+} */
+
+header img {
+	width: 195px;
+	height: 200px;
+	margin-left: 50px;
+}
+
 /*********************** Tratamento Responsivo ***********************/
 img {
 	max-width: 100%; /* todas as imagens do site ficam responsivas */
@@ -27,17 +43,17 @@ height: 500px;
 }
 
 h1{
- color: #ffffff;
+color: #ffffff;
 }
 
 h2{
- color: #ffffff;
+color: #ffffff;
 }
 
 p{
-	 color: #ffffff;
+ color: #ffffff;
 }
 
 ul{
-	 color: #ffffff;
+ color: #ffffff;
 }
