@@ -7,16 +7,27 @@
 body{
 	font-family: 'Shadows Into Light', cursive;
 	/*background: #6e6e6e;*/
-	background-image: url("../imagens/51.jpg");
+	background-image: url("../imagens/nha.jpg");
 	background-attachment: fixed;/* fixa o background */
 	background-size: cover;/* manter o tamanho da imagem de forma responsiva*/ 
 	font-size: 1em; /* 1em = 16px */
 }
 #main{
 	max-width: 1024px;
-	/*background-color: #ffffff;*/
+	/*background-color: white;*/
 	margin: 0 auto; /* centralizar */
 	margin-top: 50px;
+	border: 100px;
+}
+
+footer{
+	background: #3d3d3d;
+	color: white;
+}
+
+section section img{
+width: 50px;
+height: 50px;
 }
 
 /** Cabeçalho **/
@@ -30,7 +41,6 @@ body{
 header img {
 	width: 195px;
 	height: 200px;
-	margin-left: 50px;
 }
 
 /*********************** Tratamento Responsivo ***********************/
@@ -43,17 +53,141 @@ height: 500px;
 }
 
 h1{
-color: #ffffff;
+color: #000;
 }
 
 h2{
-color: #ffffff;
+color: #000;
 }
 
 p{
- color: #ffffff;
+ color: #000;
 }
 
 ul{
- color: #ffffff;
+ color: #000;
+}
+
+b{
+  color: #000;
+}
+
+/* Menu */
+
+body{
+	font-family: sans-serif;
+}
+
+nav{
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin-top: 0px;
+	background-color: #3d3d3d;
+	overflow: hidden; /* completar a largura total com o background (formar o menu) */
+}
+
+nav > ul > li {
+	float: left;
+	width: 25%; /*  */
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+	padding: 15px 15px 10px 15px;
+	border-right: white 1.5px solid;
+	border-left:  white 1.5px solid;
+	border-top:  white 1.5px solid;
+	border-bottom:  white 1.5px solid;
+
+}
+
+nav ul li:hover{
+	background-color: #00bcff;
+	transition: all 0.25s; /* efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+	width: 16.2%;
+
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+/* Desenhando um triângulo no css */
+.Detalhes:after{
+	content: ''; /* content: insere um conteúdo no css */
+	color: #ff0000;
+	border:  5px solid transparent;
+	/*border-left-color: #ff0000;*/
+	/*border-right-color: #00ff00;*/
+	/*border-bottom-color: #0000ff;*/
+	border-top-color: #e8e8e8;
+
+}
+
+.Mobile{
+	display: none;
+}
+
+/* Classe usada pela Js para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+/* Tratamento responsivo */
+
+@media screen and (max-width: 480px){
+	body{
+		margin:0px;
+	}
+
+	#main{
+		margin: 0px;
+	}
+
+	.Mobile{
+		display: block;
+		background-color: #000061;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+	}
+
+	nav > ul > li{
+		float: none;
+	}
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+
+	nav ul li a{
+		font-size: 0.875em;
+		padding: 12px;
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* remover efeito de transição */
+	}
+
+	nav li ul li{
+		background-color: #044364;
+	}
+
+
 }

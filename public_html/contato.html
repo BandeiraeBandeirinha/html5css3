@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<!-- favicon -->
 	<link rel="icon" href="imagens/lolzin.png">
-	<title>Home - HTML5 CSS3</title>
+	<title>Contato - HTML5 CSS3</title>
 	<link rel="stylesheet" href="css/style.css">
 	<style type="text/css">
 img{
@@ -41,35 +41,22 @@ img{
 			<li><a href="contato.html">Contato</a></li>
 		</ul>
 	</nav>
-		<!-- conteúdo -->
-		<section id="banner" style="text-align:center">
-			<img src="imagens/background.jpg" alt="html5 css3">
-			<h1>Primeiros passos com HTML5 + CSS3</h1>
-		</section>
+		<!-- Formuário de contato -->
 
-		<section id="headling">
-			<h2 style="text-align:center">Aprenda HTML5 e CSS3 de forma simples e prática, desenvolvendo um site responsivo do "Zero" (dale dedele dedele dale dedele doli)</h2>
-		</section>
+		<div id="contato">
+			<h1>Contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
 
-		<section id="destaque" style="text-align:center">
-			<!-- Bloco 1 -->
+				<input type="text" name="email" placeholder="email">
 
-			<img src="imagens/exploracao.png" alt="mobile">
-			<p>SASAGEYO SASAGEYO SHINZOU WO SASAGEYO</p>
-			<a href="#">Botão 1</a><br>
-<br>
-			<img src="imagens/cavalaria.png" alt="responsivo">
-			<p>SASAGEYO SASAGEYO SHINZOU WO SASAGEYO</p>
-			<a href="#">Botão 2</a><br>
-<br>
-			<img src="imagens/rose.png" alt="frontend">
-			<p>SASAGEYO SASAGEYO SHINZOU WO SASAGEYO</p>
-			<a href="#">Botão 3</a><br>
-		</section>
+			<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" name="Enviar">
+		</div>
 
 		<!-- Rodapé -->
 		<footer>
-			<p style="text-align:center">©2018 - HOME</p>
+			<p style="text-align:center">©2018 - Contato</p>
 		</footer>
 
 	</div>
