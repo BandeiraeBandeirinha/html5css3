@@ -1,193 +1,273 @@
-/* Folha de estilo principal */
+/**
+ Folha de estilo principal do html5 + css3
+ @author Geovani Bandeira
+ */
 
-/*********************** Importando Fonte ***********************/
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-
-/*********************** Principal ***********************/
-body{
-	font-family: 'Shadows Into Light', cursive;
-	/*background: #6e6e6e;*/
+/****************  IMPORTANDO FONT ****************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+/**************** Principal ****************/
+body {
+	font-family: 'Open Sans', sans-serif;
+	/* background-color: #FFFFFF;*/
 	background-image: url("../imagens/nha.jpg");
-	background-attachment: fixed;/* fixa o background */
-	background-size: cover;/* manter o tamanho da imagem de forma responsiva*/ 
-	font-size: 1em; /* 1em = 16px */
+	background-attachment: fixed; /* fixa o background */
+	background-size: cover; /* manter o tamanho de forma responsiva */
+	font-size: 1em; /* 1em = 16 px */
 }
+
 #main{
 	max-width: 1024px;
-	/*background-color: white;*/
-	margin: 0 auto; /* centralizar */
-	margin-top: 50px;
-	border: 100px;
-}
+	margin: 0 auto; /* centralizar a div*/
+	margin-top: 50px; /* box model */
 
-footer{
-	background: #3d3d3d;
-	color: white;
 }
 
 section section img{
 width: 50px;
 height: 50px;
 }
+ /*********** Cabeçalho *************/
+ header{
+ 	width: 100%;
+ 	height: 200px;
+ 	margin-bottom: 20px;	
 
-/** Cabeçalho **/
-/* header{
-	width: 100%	;
-	height: 200px;
-	background-color: #000000;
+ }
+ header img {
+ 	width: 195px;
+ 	height: 200px;
+ 	margin-top: 10px;
+ 	margin-left: 40px;
+ }
+ section img{
+ 	margin-top: 50px;
+ }
 
-} */
+/*********** MENU **********/
 
-header img {
-	width: 195px;
-	height: 200px;
+
+/***************** Tratamento responsivo *****************/
+
+img{
+	max-width: 100%; /*todas as imagens do site ficam responsivas */
 }
 
-/*********************** Tratamento Responsivo ***********************/
-img {
-	max-width: 100%; /* todas as imagens do site ficam responsivas */
-}
 #banner img{
 width: 1020px;
 height: 500px;
 }
 
-h1{
-color: #000;
-}
 
-h2{
-color: #000;
-}
-
-p{
- color: #000;
-}
-
-ul{
- color: #000;
-}
-
-b{
-  color: #000;
-}
-
-/* Menu */
-
-body{
-	font-family: sans-serif;
-}
-
+/*********** MENU RESPONSIVO ***********/
 nav{
 	width: 100%;
+	max-width: 1024px;
+	position: absolute;
 }
 
 nav ul{
 	list-style: none;
 	padding: 0px;
-	margin-top: 0px;
+	margin: 0px;
 	background-color: #3d3d3d;
-	overflow: hidden; /* completar a largura total com o background (formar o menu) */
+	/*overflow: hidden; completar a largura total com o background (formar o menu)*/
 }
 
-nav > ul > li {
+nav > ul > li{
 	float: left;
-	width: 25%; /*  */
+	/*width com esse valor devido a borda */
+	width: 24.7%; /* 4 elementos do menu primário */
+	border-top: 2px solid #000000;
+	border-bottom: 2px solid #000000;
+	border-left: 1.5px solid #000000;	
+	border-right: 1.5px solid #000000;
+}
+
+nav > ul > li > a{
+	font-size: 1.125em;
 }
 
 nav ul li a{
+	background-color: #3d3d3d;
 	text-decoration: none;
-	color: #ffffff;
+	color: #FFFFFF;
 	padding: 15px;
 	display: block;
-	padding: 15px 15px 10px 15px;
-	border-right: white 1.5px solid;
-	border-left:  white 1.5px solid;
-	border-top:  white 1.5px solid;
-	border-bottom:  white 1.5px solid;
-
+	text-align: center;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
 	background-color: #00bcff;
-	transition: all 0.25s; /* efeito transição (0 a 1) */
+	transition: all 0.27s; /* efeito transição (0 a 1) */
 }
 
 nav li ul{
 	display: none;
-	width: 16.2%;
-
 }
 
 nav li:hover ul{
 	display: block;
-	position: absolute;
+}
+
+.g1 img{
+	width: 128px;
+	height: 128px;
 }
 
 /* Desenhando um triângulo no css */
-.Detalhes:after{
-	content: ''; /* content: insere um conteúdo no css */
-	color: #ff0000;
-	border:  5px solid transparent;
-	/*border-left-color: #ff0000;*/
-	/*border-right-color: #00ff00;*/
-	/*border-bottom-color: #0000ff;*/
-	border-top-color: #e8e8e8;
 
+.Detalhes:after{ /* Atributo after (após o conteudo)*/
+	content: ''; /* Content: insere um conteudo no css */
+	color: #FFFFFF;
+	border: 5px solid transparent;
+	/* border-left-color: #800000;
+	border-right-color: #800000;
+	border-bottom-color: #91BBFF; */
+	border-top-color: #FFFFFF; 
+	/* Alinhamento */
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .Mobile{
 	display: none;
 }
-
-/* Classe usada pela Js para fixar o menu */
+/* Classe usada pelo JS para fixar o menu */
 .Fixar{
 	position: fixed;
 	top: 0;
 	z-index: 3;
 }
 
-/* Tratamento responsivo */
 
-@media screen and (max-width: 480px){
-	body{
-		margin:0px;
+/************  Conteúdo em Destaque - Home  *******************/
+                  /***  Banner  ***/
+#banner{
+	margin-top: 52px;
+}
+
+
+	/***** RODAPÉ *****/
+	footer{
+		width: 99.7%;
+		background-color: #3d3d3d;
+		margin-top: 75px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		text-align: center;
+		color: #ffffff;
+		font-size: 1em;
+		border-bottom: 2px solid #000000;
+		border-left: 2px solid #000000;
+		border-right: 2px solid #000000;
+
 	}
 
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+#contato{
+	padding-top: 80px;
+	width: 70%
+	margin: 0 auto; 
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid #3d3d3d;	
+	margin: 7px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #3d3d3d;	
+	margin-bottom: 7px;
+	resize: none;
+
+}
+
+#contato input[type=submit]{
+	background-color: #3d3d3d;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	color: #fff;
+	padding: 15px 200px 15px 200px;
+}
+
+/***** Tratamento responsivo ********/
+
+@media screen and (max-width: 480px){
+	body{	
+		margin: 0px;
+	}
 	#main{
 		margin: 0px;
 	}
 
+	/*** cabeçalho ***/
+
+	header{
+ 	text-align: center;
+ 	margin-bottom: 0px;
+
+ }
+ header img {
+ 	margin-top: 0px;
+ 	margin-left: 0px;
+ }
+
+	/* menu hamburguer */
 	.Mobile{
 		display: block;
-		background-color: #000061;
-		color: #ffffff;
+		background-color: #3d3d3d;
+		color: #FFFFFF;
 		text-decoration: none;
 		padding: 15px;
+}
+
+nav > ul > li{
+	float: none;
+	width: 100%;
 	}
 
-	nav > ul > li{
-		float: none;
+nav ul{
+	width: 100%;
+	display: none;
 	}
-
-	nav ul{
-		width: 100%;
-		display: none;
-	}
+	
+	/* ajuste */
 
 	nav ul li a{
-		font-size: 0.875em;
-		padding: 12px;
+		/*font-size: 0.938em;
+		padding: 12px;*/
 		text-align: left;
 	}
 
 	nav ul li a:hover{
-		transition: all 0s; /* remover efeito de transição */
-	}
+		transition: all 0s; /* remover efeito de trans~ição */
 
+	}
 	nav li ul li{
-		background-color: #044364;
+		background-color: #3d3d3d;
 	}
 
+	nav li  ul li a{
+		background-color:#3d3d3d;
+		padding-left: 40px;
+	}
 
+	/*** IMPORTANTE para UX no dispositivo mobile, não exibir o 2º nivel do menu enquanto o conteudo
+	não for clicado **/
+	nav li:hover ul{
+		display: none;
+	}
 }
+
