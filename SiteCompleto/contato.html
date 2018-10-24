@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/favicon.png"> 
+	<title>Contato - html5 css3</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Página de contato">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+	<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- estrutura principal -->
+	<div id="main">
+
+		<!-- cabeçalho -->
+		<header style="text-align: center;">
+			<a href="index.html"><img src="imagens/logo.gif" title="HTML5 + CSS3" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+					<ul>
+						<li><a href="conteudo/html5.html">Mangá</a></li>
+						<li><a href="conteudo/css3.html">Anime</a></li>
+						<li><a href="https://www.youtube.com/watch?v=liyBkSG9Qd8" target="_blank">Abertura</a></li>
+					</ul>
+				</li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		<!-- formulário de contato -->
+		<div id="contato">
+			<h1>Formulário de contato</h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
+				<input type="text" name="email" placeholder="email">
+				<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" value="ENVIAR">
+			</form>
+		</div>
+		
+		<!-- rodapé -->
+		<footer style="margin-top: 50px;">
+			<p>©2018 - Geovani Bandeira</p>			
+		</footer>
+	</div>
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
+</body>
+</html>

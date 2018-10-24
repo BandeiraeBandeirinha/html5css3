@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/favicon.png"> 
+	<title>Home - html5 css3</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Aprenda html5 e css3 de forma simples e prática">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<!-- estrutura principal -->
+	<div id="main">
+
+		<!-- cabeçalho -->
+		<header style="text-align: center;">
+			<a href="index.html"><img src="imagens/logo.gif" title="HTML5 + CSS3" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+					<ul>
+						<li><a href="conteudo/html5.html">Mangá</a></li>
+						<li><a href="conteudo/css3.html">Anime</a></li>
+						<li><a href="https://www.youtube.com/watch?v=liyBkSG9Qd8" target="_blank">Aberturas</a></li>
+					</ul>
+				</li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+
+		<!-- conteúdo -->
+		<section id="banner">
+			<img src="imagens/banner.jpg" alt="Curso básico de html5 e css3">
+			<h1>Shingeki no Kyojin</h1>
+		</section>
+
+		<section id="heading">
+			<h2>Descubra um pouco sobre as tropas do Anime</h2>
+		</section>
+
+		<section id="destaque">
+			<!-- bloco 1 -->
+			<div class="blocos">
+				<img src="imagens/html5.png" alt="">
+				<h3>Polícia Militar</h3>
+				<p> A Polícia Militar é muito privilegiada por ser a responsável por proteger o Rei e viver dentro da Muralha Sina. Somente os dez melhores no treinamento de cadetes podem se inscrever para a Polícia Militar.</p>
+				<!-- <a href="#">Polícia Militar</a> -->
+			</div>
+			<!-- bloco 2 -->
+			<div class="blocos">
+				<img src="imagens/css3.png" alt="">
+				<h3>Guarda Estacionária</h3>
+				<p>A Guarda Estacionária é formada por soldados que ficam vigiando as muralhas e quando os titãs entram, eles os combatem. </p>
+				<!-- <a href="#">Guarda Estacionária</a> -->
+			</div>
+			<!-- bloco 3 -->
+			<div class="blocos">
+				<img src="imagens/projeto.png" alt="">
+				<h3>Legião de Escotismo</h3>
+				<p>A Legião de Escotismo é formada pelos soldados que se aventuram no mundo lá fora para caçar e matar os titãs. São conhecidos como heróis por todas as muralhas..</p>
+				<!-- <a href="#">Legião de Escotismo</a> -->
+			</div>
+			
+		</section>
+
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Geovani Bandeira</p>			
+		</footer>
+	</div>
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>	
+<script src="js/tela.js"></script>
+</body>
+</html>
